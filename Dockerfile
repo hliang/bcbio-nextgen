@@ -56,9 +56,6 @@ RUN apt-get update && \
 # Create directories and symlinks for data 
     mkdir -p /mnt/biodata && \
     mkdir -p /tmp/bcbio-nextgen && \
-    mv /usr/local/share/bcbio-nextgen/galaxy/bcbio_system.yaml /usr/local/share/bcbio-nextgen/config && \
-    rmdir /usr/local/share/bcbio-nextgen/galaxy && \
-    ln -s /mnt/biodata/galaxy /usr/local/share/bcbio-nextgen/galaxy && \
     ln -s /mnt/biodata/gemini_data /usr/local/share/bcbio-nextgen/gemini_data && \
     ln -s /mnt/biodata/genomes /usr/local/share/bcbio-nextgen/genomes && \
     ln -s /mnt/biodata/liftOver /usr/local/share/bcbio-nextgen/liftOver && \
